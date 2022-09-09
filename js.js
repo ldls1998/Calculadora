@@ -26,9 +26,14 @@ function operate(operator, num1, num2) {
 }
 
 const botones = document.querySelectorAll(".number");
+var numeroDisplay = document.querySelector(".display");
+numeroDisplay.textContent = 0;
+var numeroAOperar = "";
 
+// Capturamos cada número clickeado
 botones.forEach((boton) => {
     boton.addEventListener("click", () => {
-        alert(boton.textContent);
+        numeroAOperar += boton.textContent;
+        numeroDisplay.textContent = numeroAOperar;
     });
 });
