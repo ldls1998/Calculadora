@@ -24,3 +24,11 @@ function operate(operator, num1, num2) {
     if (operator === "divide")
         return divide(num1, num2);
 }
+
+const botones = document.querySelectorAll(".number");
+
+botones.forEach((boton) => {
+    boton.addEventListener("click", () => {
+        alert(boton.textContent);
+    });
+});
