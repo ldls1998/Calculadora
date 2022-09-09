@@ -1,0 +1,16 @@
+main {
+    border: 2px solid blue;
+    margin: 150px;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
